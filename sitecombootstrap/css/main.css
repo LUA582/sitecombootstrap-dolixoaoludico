@@ -1,0 +1,176 @@
+/* === GERAL === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #1d7044 !important;
+}
+
+/* === CORES PERSONALIZADAS === */
+.text-green { color: #1d7044 !important; }
+.text-orange { color: #e25c29 !important; }
+.bg-green { background-color: #1d7044 !important; }
+.bg-orange { background-color: #e25c29 !important; }
+
+/* === MENU === */
+.navbar-dark {
+    background-color: #e25c29 !important;
+}
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+    color: #f8d6b5 !important;
+}
+
+/* === HERO === */
+header {
+    background: linear-gradient(135deg, #175a4b, #175a4b);
+}
+
+/* Botão Laranja com Efeito "Vazado" ao passar o mouse */
+.btn-orange {
+    background-color: #e25c29 !important;
+    color: white !important;
+    border: 2px solid #e25c29 !important;
+    transition: all 0.3s ease !important;
+    font-weight: 600;
+}
+
+.btn-orange:hover {
+    background-color: white !important;
+    color: #e25c29 !important;
+    border-color: #e25c29 !important;
+    transform: scale(1.03);
+}
+
+/* === CARDS === */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(226, 92, 41, 0.15) !important;
+}
+
+/* Borda laranja no card de consciência ambiental */
+.card-laranja {
+    border: 2px solid #e25c29 !important;
+    border-radius: 15px !important;
+}
+
+/* === ALERTA INSPIRAÇÃO === */
+.alert-inspiracao-verde {
+    background-color: rgba(226, 92, 41, 0.12);
+    border: 1px solid rgba(226, 92, 41, 0.25);
+    border-radius: 15px;
+    color: #1d7044;
+    padding: 20px 25px;
+    font-weight: 500;
+}
+.alert-inspiracao-verde h5,
+.alert-inspiracao-verde i {
+    color: #1d7044 !important;
+}
+
+/* === TÍTULOS === */
+.section-title {
+    color: #1d7044;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    position: relative;
+    padding-bottom: 10px;
+}
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #e25c29;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Título "Nossa Metodologia" */
+.text-orange {
+    color: #e25c29 !important;
+}
+
+/* === GALERIA E VÍDEOS === */
+#galeria .card-title,
+#videos .card-title {
+    color: #e25c29 !important;
+    font-weight: 700;
+}
+
+/* === DEPOIMENTOS === */
+.testimonial-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #e25c29;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 50%;
+}
+
+/* === BOTÕES === */
+.btn {
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+/* === CONTATO === */
+#contato .btn-outline-light {
+    color: white !important;
+    border-color: #e25c29 !important;
+}
+#contato .btn-outline-light:hover {
+    background-color: #e25c29 !important;
+    color: white !important;
+}
+#contato .btn-light {
+    color: #e25c29 !important;
+}
+#contato .btn-light:hover {
+    background-color: white !important;
+    color: #175a4b !important;
+}
+
+/* === RODAPÉ === */
+footer {
+    background-color: #e25c29 !important;
+    color: white !important;
+    padding: 2rem 0;
+}
+footer a {
+    color: white !important;
+}
+footer a:hover {
+    color: #f8d6b5 !important;
+}
+
+/* === BADGES === */
+.badge {
+    font-size: 0.9em;
+    padding: 0.5em 0.8em;
+    display: inline-block;
+    margin: 2px;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+    }
+    .testimonial-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
